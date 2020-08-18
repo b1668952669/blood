@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>blood</display-name>
+  <welcome-file-list>
+  	<welcome-file>login.jsp</welcome-file>
+  	<welcome-file>index.html</welcome-file>
+  	<welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>CourseServlet</display-name>
+    <servlet-name>CourseServlet</servlet-name>
+    <servlet-class>com.blood.CourseServlet</servlet-class>
+  </servlet>
+  
+
+   <servlet-mapping>
+	<servlet-name>CourseServlet</servlet-name>
+	<!-- 配置url访问这个servlet类的名字，名字按照变量命名规范可以自定义名字。
+	如下配置：/one，这个名字会在访问OneServlet类时候使用 
+	例如：127.0.0.1:8080/项目名称/one-->
+	<url-pattern>/blood</url-pattern>
+   </servlet-mapping>
+
+ 
+</web-app>
